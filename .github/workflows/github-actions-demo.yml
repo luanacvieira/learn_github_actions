@@ -7,14 +7,3 @@ jobs:
     steps:
       -run: echo "O job foi automaticamente trigado por ${{ github.event_name }} evento."
       -run: echo "este JOB agora esta rodando no ${{ runner.os }} server host do github."
-      -run: echo " the name of your branch is ${{ github.ref }} e seu repositorio é ${{ github.repository}}"
-      - name: Checkout repository code
-        uses: actions/checkout@v4
-        
-#     -run: echo "The ${{guthub.repository}} repository has been cloned to the runner"
-#     -run: echo " The workflow is now ready to test your code on the runner"
-#     -name: List files in the repository
-#      run: |
-#         ls ${{github.workspace}}
-#     -run: echo "This JOBs status is ${{job.status}}."
-       
