@@ -7,7 +7,5 @@ jobs:
     steps:
       -run: echo "O job foi automaticamente trigado por ${{ github.event_name }} evento. \n Este JOB agora esta rodando no ${{ runner.os }} server host do github."
       -name: List files in the repository
-        run: |
+       run:|
           ls ${{github.workspace}}
-      -run: echo "This JOBs status is ${{job.status}}."
-      
