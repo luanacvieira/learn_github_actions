@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -run: echo "O job foi automaticamente trigado por ${{ github.event_name }} evento."
-      -run: echo "este JOB agora esta rodando no ${{ runner.os}} server host do github"
+      -run: echo "este JOB agora esta rodando no ${{ runner.os}} server host do git hub."
       -run: echo " the name of your branch is ${{ github.ref }} e seu repositorio é ${{ github.repository}}"
       -name: Check out repository code
        uses: actions/chackout@v4
